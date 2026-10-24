@@ -9,7 +9,7 @@ const GenerateImage = () => {
   const [input,setInput] = useState("");
   const [publish,setPublish] = useState(false);
 
-  const onSumbitHandler = async () =>{
+  const onSumbitHandler = async (e) =>{
     e.preventDefault();
   }
 

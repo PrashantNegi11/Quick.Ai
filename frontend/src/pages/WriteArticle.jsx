@@ -12,7 +12,7 @@ const WriteArticle = () => {
   const [selectedLength,setSelectedLength] = useState(articleLength[0]);
   const [input,setInput] = useState("");
 
-  const onSumbitHandler = async () =>{
+  const onSumbitHandler = async (e) =>{
     e.preventDefault();
   }
 
