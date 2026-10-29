@@ -4,6 +4,7 @@ import cors from "cors";
 import { clerkMiddleware } from "@clerk/express";
 import aiRouter from "./routes/aiRoutes.js";
 import connectCloudinary from "./configs/cloudinary.js";
+import userRouter from "./routes/userRoutes.js";
 
 const app = express();
 await connectCloudinary();
@@ -18,7 +19,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/api/ai", aiRouter);
-
+app.use("api/user",userRouter);
 app.listen(port, () => {
     console.log(`server running at ${port}`);
 });
