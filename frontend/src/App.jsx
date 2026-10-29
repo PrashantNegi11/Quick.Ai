@@ -18,7 +18,8 @@ function App() {
 
   useEffect( ()=>{
     getToken().then( (token)=> console.log(token));
-  },[])
+  },[]);
+  
   return (
     <div>
       <Routes>

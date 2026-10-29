@@ -1,5 +1,3 @@
-//Middleware to check userId and hasPremiumPlan
-
 import { clerkClient } from "@clerk/express";
 
 export const auth = async (req,res,next) => {
